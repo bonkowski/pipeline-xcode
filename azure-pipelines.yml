@@ -14,6 +14,7 @@ variables:
 steps:
 - task: Xcode@5
   inputs:
+    actions: 'build, test'
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
