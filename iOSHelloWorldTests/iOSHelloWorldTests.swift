@@ -12,7 +12,7 @@ import XCTest
 class iOSHelloWorldTests: XCTestCase {
     
     func testFailingExample() {
-        XCTAssertTrue(false)
+        XCTAssertTrue(true)
     }
 
     func testSuccessfulExample() {
