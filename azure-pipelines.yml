@@ -16,18 +16,13 @@ variables:
   configuration: 'Debug'
 
 steps:
-- task: Xcode@5
+- task: ShellScript@2
   inputs:
-    actions: '-resolvePackageDependencies'
-    sdk: '$(sdk)'
-    scheme: '$(scheme)'
-    configuration: '$(configuration)'
-    xcodeVersion: 'default' # Options: default, 10, 9, 8, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: false
-    destinationTypeOption: simulators
-    destinationSimulators: iPhone 11 Pro
-    destinationPlatformOption: iOS
+    scriptPath: 'test.sh'
+    #args: '' # Optional
+    #disableAutoCwd: false # Optional
+    #cwd: '' # Optional
+    #failOnStandardError: false
   
 
 - task: Xcode@5
