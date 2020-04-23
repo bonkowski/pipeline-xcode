@@ -17,7 +17,7 @@ variables:
 
 steps:
 
-- bash: test.sh
+- bash: ./test.sh
   
 
 - task: Xcode@5
