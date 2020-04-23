@@ -11,7 +11,7 @@ pool:
   vmImage: 'macOS-10.15'
 
 variables:
-  scheme: ''
+  scheme: 'iOSHelloWorld'
   sdk: 'iphoneos'
   configuration: 'Debug'
 
