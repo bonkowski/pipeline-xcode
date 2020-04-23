@@ -16,11 +16,10 @@ variables:
   configuration: 'Debug'
 
 steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
+
+- bash: test.sh
   
+
 - task: Xcode@5
   inputs:
     actions: 'test'
