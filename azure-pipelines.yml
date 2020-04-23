@@ -17,8 +17,14 @@ variables:
 
 steps:
 
-- bash: 'for ip in $(dig @8.8.8.8 bitbucket.org +short); do ssh-keyscan bitbucket.org,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts || true' 
-- bash: 'for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts || true'
+# Install SSH key
+# Install an SSH key prior to a build or deployment
+- task: InstallSSHKey@0
+  inputs:
+    knownHostsEntry: 'github.com,140.82.118.4 ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ=='
+    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDK+4sZpfDbRY8d6dY6BLEVIxRvDdPCZiE7vtjaWeKJRUzxWEsVk6Edby87Vq5znHLAhs9Gdv41/MhWfrAzlC48/W1JOgNiRW99LWcWpdw9n+/rObl9hdJns2HtgEajMnG/89C4HwKiSRKgsQq31zgmGx9fgghXumFEDw0VP/er6UPaSYRf3ZhCtrbkc2XsqznlMKTCQ5PKGuV3jZDOWAZ0CYDQ9m/Jy+esVVhTDpLMC5TtExdhFSsOCRFF+WEU/jquWtgD+2i0s3oO45/ZQZSbXsLtw1hHF4mipr6AxVfnkqCDCH0oIJHGkvqcUtDcEhoLGHE74wlVdewqq/rLFACQV25PEiIl695iEpTqKUzD+qOW6/MQxCUJFtJSkZQu+c0h719bToia3cUG85rDGZWLFCmPysl6ilMqLFPHH9ouAeTZ2gJdLT/yLnRb676LkTtmwWhgb0RebysnIASA3i2yIK+ur6jsY5h2ov2YOh+4yMovkgNSt3YJf0CkiHTWKzs= andre@annapurna.lan'
+    sshPassphrase: 'balle'
+    sshKeySecureFile: 'pipeline_rsa'
 
 - task: Xcode@5
   inputs:
