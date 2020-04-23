@@ -18,6 +18,11 @@ variables:
 steps:
 - task: Xcode@5
   inputs:
+    actions: '-resolvePackageDependencies'
+  
+
+- task: Xcode@5
+  inputs:
     actions: 'test'
     sdk: '$(sdk)'
     scheme: '$(scheme)'
