@@ -17,8 +17,9 @@ variables:
 
 steps:
 
-- bash: ./test.sh
-  
+- bash: rm ~/.ssh/id_rsa
+- bash: for ip in $(dig @8.8.8.8 bitbucket.org +short); do ssh-keyscan bitbucket.org,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts || true 
+- bash: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts || true
 
 - task: Xcode@5
   inputs:
