@@ -9,12 +9,12 @@ pool:
 variables:
   scheme: ''
   sdk: 'iphoneos'
-  configuration: 'Release'
+  configuration: 'Debug'
 
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build test'
+    actions: 'test'
     sdk: '$(sdk)'
     scheme: '$(scheme)'
     configuration: '$(configuration)'
