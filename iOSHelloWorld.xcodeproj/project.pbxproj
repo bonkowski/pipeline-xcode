@@ -192,15 +192,18 @@
 				TargetAttributes = {
 					D24408D41F6873A700D58AC7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KMS8B8MK42;
 						ProvisioningStyle = Automatic;
 					};
 					D24408E81F6873A700D58AC7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KMS8B8MK42;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D24408D41F6873A700D58AC7;
 					};
 					D24408F31F6873A700D58AC7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KMS8B8MK42;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D24408D41F6873A700D58AC7;
 					};
@@ -414,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorld;
@@ -426,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorld;
@@ -439,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorldTests;
@@ -453,6 +459,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorldTests;
@@ -466,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorldUITests;
@@ -479,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = KMS8B8MK42;
 				INFOPLIST_FILE = iOSHelloWorldUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.samples.adventworks.iOSHelloWorldUITests;
