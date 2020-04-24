@@ -30,6 +30,11 @@ steps:
     sshPassphrase: $(sshPassphrase)
     sshKeySecureFile: 'pipeline_rsa'
 
+
+- script: echo $(knownHostsEntry)
+- script: echo $(sshPublicKey)
+- script: echo $(sshPassphrase)
+
 - task: Xcode@5
   inputs:
     actions: 'test'
