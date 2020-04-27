@@ -30,6 +30,9 @@ steps:
     sshPassphrase: $(sshPassphrase)
     sshKeySecureFile: 'pipeline_rsa'
 
+
+- bash: brew -v
+
 - task: Xcode@5
   inputs:
     actions: 'test'
