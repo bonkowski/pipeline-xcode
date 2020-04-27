@@ -30,8 +30,9 @@ steps:
     sshPassphrase: $(sshPassphrase)
     sshKeySecureFile: 'pipeline_rsa'
 
-
-- bash: brew -v
+- bash: brew install swiftlint
+  displayName: Install Swift Lint
+  failOnStderr: false
 
 - task: Xcode@5
   inputs:
