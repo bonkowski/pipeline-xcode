@@ -46,3 +46,4 @@ steps:
     destinationTypeOption: simulators
     destinationSimulators: iPhone 11 Pro
     destinationPlatformOption: iOS
+    publishJUnitResults: true
